@@ -1,0 +1,20 @@
+Reduced Matrix:
+
+0. Use T-SNE for dimensionality reduction
+1. K-means clustering. Visualize results with legend.
+2. Prepare summary list of documents. how do the clusters match with original document categories (subs)?
+3. Hierarchical clustering
+4. Visualize the clusters with legend 
+5. Describe results. How do the clusters match with original document categories?
+6. Compare K-means and Heirarchical clustering. Which do I prefer to present to management? What do they tell us about the corpus? Which provides the most clear-cut results?
+
+7. Develop topic modeling solution using Latent Dirichlet Allocation
+8. Identify documents with topics and describe topics with terms
+9. Use topic modeling result to provide a corpus description for management
+
+10. bi-clustering on full documents-by-terms matrix. Use SKlearn Spectral biclustering.
+11. Describe results. Compare to cluster analysis and topic modeling.
+
+12. Construct an ontology that is broader enough to provide a framework.
+13. Provide ontology visualization
+14. Review methods and their usefulness in gaining a corpus understanding
