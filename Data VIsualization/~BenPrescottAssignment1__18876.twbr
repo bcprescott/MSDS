@@ -1,0 +1,2383 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='modern' />
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Output' inline='true' name='federated.1cvgb7219ux5ls19xhr9006d5dxq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Tweets' name='textscan.06l32bl15bjufz14m1p211gwv7vs'>
+            <connection class='textscan' directory='C:/Users/bprescott/OneDrive - ConvergeOne/Desktop/Files' filename='Tweets.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='DOGE-USD' name='textscan.0dopzxm08e7k6g17n9nxw0h6idr8'>
+            <connection class='textscan' directory='C:/Users/bprescott/OneDrive - ConvergeOne/Desktop/Files' filename='DOGE-USD.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0dopzxm08e7k6g17n9nxw0h6idr8' name='DOGE-USD.csv' table='[DOGE-USD#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='real' name='Open' ordinal='1' />
+            <column datatype='real' name='High' ordinal='2' />
+            <column datatype='real' name='Low' ordinal='3' />
+            <column datatype='real' name='Close' ordinal='4' />
+            <column datatype='real' name='Adj Close' ordinal='5' />
+            <column datatype='integer' name='Volume' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.06l32bl15bjufz14m1p211gwv7vs' name='Tweets.csv' table='[Tweets#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Table Names-1' ordinal='0' />
+              <column datatype='string' name='Table Names' ordinal='1' />
+              <column datatype='integer' name='F1' ordinal='2' />
+              <column datatype='integer' name='id' ordinal='3' />
+              <column datatype='integer' name='conversation_id' ordinal='4' />
+              <column datatype='integer' name='created_at' ordinal='5' />
+              <column datatype='date' name='date' ordinal='6' />
+              <column datatype='integer' name='timezone' ordinal='7' />
+              <column datatype='string' name='place' ordinal='8' />
+              <column datatype='string' name='tweet' ordinal='9' />
+              <column datatype='string' name='language' ordinal='10' />
+              <column datatype='string' name='hashtags' ordinal='11' />
+              <column datatype='string' name='cashtags' ordinal='12' />
+              <column datatype='integer' name='user_id' ordinal='13' />
+              <column datatype='integer' name='user_id_str' ordinal='14' />
+              <column datatype='string' name='username' ordinal='15' />
+              <column datatype='string' name='name' ordinal='16' />
+              <column datatype='integer' name='day' ordinal='17' />
+              <column datatype='integer' name='hour' ordinal='18' />
+              <column datatype='string' name='link' ordinal='19' />
+              <column datatype='string' name='urls' ordinal='20' />
+              <column datatype='string' name='photos' ordinal='21' />
+              <column datatype='integer' name='video' ordinal='22' />
+              <column datatype='string' name='thumbnail' ordinal='23' />
+              <column datatype='boolean' name='retweet' ordinal='24' />
+              <column datatype='integer' name='nlikes' ordinal='25' />
+              <column datatype='integer' name='nreplies' ordinal='26' />
+              <column datatype='integer' name='nretweets' ordinal='27' />
+              <column datatype='string' name='quote_url' ordinal='28' />
+              <column datatype='string' name='search' ordinal='29' />
+              <column datatype='string' name='near' ordinal='30' />
+              <column datatype='string' name='geo' ordinal='31' />
+              <column datatype='string' name='source' ordinal='32' />
+              <column datatype='string' name='user_rt_id' ordinal='33' />
+              <column datatype='string' name='user_rt' ordinal='34' />
+              <column datatype='string' name='retweet_id' ordinal='35' />
+              <column datatype='string' name='reply_to' ordinal='36' />
+              <column datatype='string' name='retweet_date' ordinal='37' />
+              <column datatype='string' name='translate' ordinal='38' />
+              <column datatype='string' name='trans_src' ordinal='39' />
+              <column datatype='string' name='trans_dest' ordinal='40' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0dopzxm08e7k6g17n9nxw0h6idr8' name='DOGE-USD.csv' table='[DOGE-USD#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='real' name='Open' ordinal='1' />
+              <column datatype='real' name='High' ordinal='2' />
+              <column datatype='real' name='Low' ordinal='3' />
+              <column datatype='real' name='Close' ordinal='4' />
+              <column datatype='real' name='Adj Close' ordinal='5' />
+              <column datatype='integer' name='Volume' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0dopzxm08e7k6g17n9nxw0h6idr8' name='dogetweets.csv' table='[dogetweets#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Table Names-1' ordinal='0' />
+              <column datatype='string' name='Table Names' ordinal='1' />
+              <column datatype='string' name='Table Names-2' ordinal='2' />
+              <column datatype='integer' name='F1' ordinal='3' />
+              <column datatype='integer' name='id' ordinal='4' />
+              <column datatype='integer' name='conversation_id' ordinal='5' />
+              <column datatype='integer' name='created_at' ordinal='6' />
+              <column datatype='date' name='date' ordinal='7' />
+              <column datatype='integer' name='timezone' ordinal='8' />
+              <column datatype='string' name='place' ordinal='9' />
+              <column datatype='string' name='tweet' ordinal='10' />
+              <column datatype='string' name='language' ordinal='11' />
+              <column datatype='string' name='hashtags' ordinal='12' />
+              <column datatype='string' name='cashtags' ordinal='13' />
+              <column datatype='integer' name='user_id' ordinal='14' />
+              <column datatype='integer' name='user_id_str' ordinal='15' />
+              <column datatype='string' name='username' ordinal='16' />
+              <column datatype='string' name='name' ordinal='17' />
+              <column datatype='integer' name='day' ordinal='18' />
+              <column datatype='integer' name='hour' ordinal='19' />
+              <column datatype='string' name='link' ordinal='20' />
+              <column datatype='string' name='urls' ordinal='21' />
+              <column datatype='string' name='photos' ordinal='22' />
+              <column datatype='integer' name='video' ordinal='23' />
+              <column datatype='string' name='thumbnail' ordinal='24' />
+              <column datatype='boolean' name='retweet' ordinal='25' />
+              <column datatype='integer' name='nlikes' ordinal='26' />
+              <column datatype='integer' name='nreplies' ordinal='27' />
+              <column datatype='integer' name='nretweets' ordinal='28' />
+              <column datatype='string' name='quote_url' ordinal='29' />
+              <column datatype='string' name='search' ordinal='30' />
+              <column datatype='string' name='near' ordinal='31' />
+              <column datatype='string' name='geo' ordinal='32' />
+              <column datatype='string' name='source' ordinal='33' />
+              <column datatype='string' name='user_rt_id' ordinal='34' />
+              <column datatype='string' name='user_rt' ordinal='35' />
+              <column datatype='string' name='retweet_id' ordinal='36' />
+              <column datatype='string' name='reply_to' ordinal='37' />
+              <column datatype='string' name='retweet_date' ordinal='38' />
+              <column datatype='string' name='translate' ordinal='39' />
+              <column datatype='string' name='trans_src' ordinal='40' />
+              <column datatype='string' name='trans_dest' ordinal='41' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Adj Close]' value='[DOGE-USD.csv].[Adj Close]' />
+          <map key='[Close]' value='[DOGE-USD.csv].[Close]' />
+          <map key='[Date]' value='[DOGE-USD.csv].[Date]' />
+          <map key='[F1 (dogetweets.csv)]' value='[dogetweets.csv].[F1]' />
+          <map key='[F1]' value='[Tweets.csv].[F1]' />
+          <map key='[High]' value='[DOGE-USD.csv].[High]' />
+          <map key='[Low]' value='[DOGE-USD.csv].[Low]' />
+          <map key='[Open]' value='[DOGE-USD.csv].[Open]' />
+          <map key='[Table Names (dogetweets.csv)]' value='[dogetweets.csv].[Table Names]' />
+          <map key='[Table Names-1 (dogetweets.csv)]' value='[dogetweets.csv].[Table Names-1]' />
+          <map key='[Table Names-1]' value='[Tweets.csv].[Table Names-1]' />
+          <map key='[Table Names-2]' value='[dogetweets.csv].[Table Names-2]' />
+          <map key='[Table Names]' value='[Tweets.csv].[Table Names]' />
+          <map key='[Volume]' value='[DOGE-USD.csv].[Volume]' />
+          <map key='[cashtags (dogetweets.csv)]' value='[dogetweets.csv].[cashtags]' />
+          <map key='[cashtags]' value='[Tweets.csv].[cashtags]' />
+          <map key='[conversation_id (dogetweets.csv)]' value='[dogetweets.csv].[conversation_id]' />
+          <map key='[conversation_id]' value='[Tweets.csv].[conversation_id]' />
+          <map key='[created_at (dogetweets.csv)]' value='[dogetweets.csv].[created_at]' />
+          <map key='[created_at]' value='[Tweets.csv].[created_at]' />
+          <map key='[date (dogetweets.csv)]' value='[dogetweets.csv].[date]' />
+          <map key='[date]' value='[Tweets.csv].[date]' />
+          <map key='[day (dogetweets.csv)]' value='[dogetweets.csv].[day]' />
+          <map key='[day]' value='[Tweets.csv].[day]' />
+          <map key='[geo (dogetweets.csv)]' value='[dogetweets.csv].[geo]' />
+          <map key='[geo]' value='[Tweets.csv].[geo]' />
+          <map key='[hashtags (dogetweets.csv)]' value='[dogetweets.csv].[hashtags]' />
+          <map key='[hashtags]' value='[Tweets.csv].[hashtags]' />
+          <map key='[hour (dogetweets.csv)]' value='[dogetweets.csv].[hour]' />
+          <map key='[hour]' value='[Tweets.csv].[hour]' />
+          <map key='[id (dogetweets.csv)]' value='[dogetweets.csv].[id]' />
+          <map key='[id]' value='[Tweets.csv].[id]' />
+          <map key='[language (dogetweets.csv)]' value='[dogetweets.csv].[language]' />
+          <map key='[language]' value='[Tweets.csv].[language]' />
+          <map key='[link (dogetweets.csv)]' value='[dogetweets.csv].[link]' />
+          <map key='[link]' value='[Tweets.csv].[link]' />
+          <map key='[name (dogetweets.csv)]' value='[dogetweets.csv].[name]' />
+          <map key='[name]' value='[Tweets.csv].[name]' />
+          <map key='[near (dogetweets.csv)]' value='[dogetweets.csv].[near]' />
+          <map key='[near]' value='[Tweets.csv].[near]' />
+          <map key='[nlikes (dogetweets.csv)]' value='[dogetweets.csv].[nlikes]' />
+          <map key='[nlikes]' value='[Tweets.csv].[nlikes]' />
+          <map key='[nreplies (dogetweets.csv)]' value='[dogetweets.csv].[nreplies]' />
+          <map key='[nreplies]' value='[Tweets.csv].[nreplies]' />
+          <map key='[nretweets (dogetweets.csv)]' value='[dogetweets.csv].[nretweets]' />
+          <map key='[nretweets]' value='[Tweets.csv].[nretweets]' />
+          <map key='[photos (dogetweets.csv)]' value='[dogetweets.csv].[photos]' />
+          <map key='[photos]' value='[Tweets.csv].[photos]' />
+          <map key='[place (dogetweets.csv)]' value='[dogetweets.csv].[place]' />
+          <map key='[place]' value='[Tweets.csv].[place]' />
+          <map key='[quote_url (dogetweets.csv)]' value='[dogetweets.csv].[quote_url]' />
+          <map key='[quote_url]' value='[Tweets.csv].[quote_url]' />
+          <map key='[reply_to (dogetweets.csv)]' value='[dogetweets.csv].[reply_to]' />
+          <map key='[reply_to]' value='[Tweets.csv].[reply_to]' />
+          <map key='[retweet (dogetweets.csv)]' value='[dogetweets.csv].[retweet]' />
+          <map key='[retweet]' value='[Tweets.csv].[retweet]' />
+          <map key='[retweet_date (dogetweets.csv)]' value='[dogetweets.csv].[retweet_date]' />
+          <map key='[retweet_date]' value='[Tweets.csv].[retweet_date]' />
+          <map key='[retweet_id (dogetweets.csv)]' value='[dogetweets.csv].[retweet_id]' />
+          <map key='[retweet_id]' value='[Tweets.csv].[retweet_id]' />
+          <map key='[search (dogetweets.csv)]' value='[dogetweets.csv].[search]' />
+          <map key='[search]' value='[Tweets.csv].[search]' />
+          <map key='[source (dogetweets.csv)]' value='[dogetweets.csv].[source]' />
+          <map key='[source]' value='[Tweets.csv].[source]' />
+          <map key='[thumbnail (dogetweets.csv)]' value='[dogetweets.csv].[thumbnail]' />
+          <map key='[thumbnail]' value='[Tweets.csv].[thumbnail]' />
+          <map key='[timezone (dogetweets.csv)]' value='[dogetweets.csv].[timezone]' />
+          <map key='[timezone]' value='[Tweets.csv].[timezone]' />
+          <map key='[trans_dest (dogetweets.csv)]' value='[dogetweets.csv].[trans_dest]' />
+          <map key='[trans_dest]' value='[Tweets.csv].[trans_dest]' />
+          <map key='[trans_src (dogetweets.csv)]' value='[dogetweets.csv].[trans_src]' />
+          <map key='[trans_src]' value='[Tweets.csv].[trans_src]' />
+          <map key='[translate (dogetweets.csv)]' value='[dogetweets.csv].[translate]' />
+          <map key='[translate]' value='[Tweets.csv].[translate]' />
+          <map key='[tweet (dogetweets.csv)]' value='[dogetweets.csv].[tweet]' />
+          <map key='[tweet]' value='[Tweets.csv].[tweet]' />
+          <map key='[urls (dogetweets.csv)]' value='[dogetweets.csv].[urls]' />
+          <map key='[urls]' value='[Tweets.csv].[urls]' />
+          <map key='[user_id (dogetweets.csv)]' value='[dogetweets.csv].[user_id]' />
+          <map key='[user_id]' value='[Tweets.csv].[user_id]' />
+          <map key='[user_id_str (dogetweets.csv)]' value='[dogetweets.csv].[user_id_str]' />
+          <map key='[user_id_str]' value='[Tweets.csv].[user_id_str]' />
+          <map key='[user_rt (dogetweets.csv)]' value='[dogetweets.csv].[user_rt]' />
+          <map key='[user_rt]' value='[Tweets.csv].[user_rt]' />
+          <map key='[user_rt_id (dogetweets.csv)]' value='[dogetweets.csv].[user_rt_id]' />
+          <map key='[user_rt_id]' value='[Tweets.csv].[user_rt_id]' />
+          <map key='[username (dogetweets.csv)]' value='[dogetweets.csv].[username]' />
+          <map key='[username]' value='[Tweets.csv].[username]' />
+          <map key='[video (dogetweets.csv)]' value='[dogetweets.csv].[video]' />
+          <map key='[video]' value='[Tweets.csv].[video]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Names-1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Names-1]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>Table Names-1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Names]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>Table Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversation_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[conversation_id]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>conversation_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timezone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[timezone]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>timezone</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>place</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[place]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>place</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tweet]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>tweet</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>language</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[language]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>language</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hashtags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hashtags]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>hashtags</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cashtags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cashtags]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>cashtags</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id_str</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id_str]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>user_id_str</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[username]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>username</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>hour</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[link]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>link</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urls</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[urls]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>urls</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>photos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[photos]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>photos</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[video]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>video</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[thumbnail]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>thumbnail</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[retweet]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>retweet</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nlikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nlikes]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>nlikes</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nreplies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nreplies]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>nreplies</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nretweets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nretweets]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>nretweets</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quote_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quote_url]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>quote_url</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>search</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[search]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>search</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>near</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[near]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>near</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geo]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>geo</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_rt_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[user_rt_id]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>user_rt_id</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_rt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[user_rt]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>user_rt</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[retweet_id]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>retweet_id</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reply_to</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reply_to]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>reply_to</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[retweet_date]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>retweet_date</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>translate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[translate]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>translate</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trans_src</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trans_src]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>trans_src</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trans_dest</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trans_dest]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>trans_dest</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DOGE-USD.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[DOGE-USD.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Open]</local-name>
+            <parent-name>[DOGE-USD.csv]</parent-name>
+            <remote-alias>Open</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High]</local-name>
+            <parent-name>[DOGE-USD.csv]</parent-name>
+            <remote-alias>High</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low]</local-name>
+            <parent-name>[DOGE-USD.csv]</parent-name>
+            <remote-alias>Low</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Close]</local-name>
+            <parent-name>[DOGE-USD.csv]</parent-name>
+            <remote-alias>Close</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adj Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Adj Close]</local-name>
+            <parent-name>[DOGE-USD.csv]</parent-name>
+            <remote-alias>Adj Close</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[DOGE-USD.csv]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Names-1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Names-1 (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>Table Names-1</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Names (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>Table Names</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Names-2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Names-2]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>Table Names-2</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversation_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[conversation_id (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>conversation_id</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[created_at (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timezone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[timezone (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>timezone</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>place</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[place (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>place</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tweet (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>tweet</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>language</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[language (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>language</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hashtags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hashtags (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>hashtags</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cashtags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cashtags (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>cashtags</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id_str</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id_str (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>user_id_str</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[username (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>username</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>hour</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[link (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>link</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urls</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[urls (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>urls</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>photos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[photos (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>photos</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[video (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>video</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[thumbnail (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>thumbnail</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[retweet (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>retweet</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nlikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nlikes (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>nlikes</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nreplies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nreplies (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>nreplies</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nretweets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nretweets (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>nretweets</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quote_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quote_url (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>quote_url</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>search</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[search (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>search</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>near</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[near (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>near</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geo (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>geo</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_rt_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[user_rt_id (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>user_rt_id</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_rt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[user_rt (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>user_rt</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[retweet_id (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>retweet_id</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reply_to</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reply_to (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>reply_to</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[retweet_date (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>retweet_date</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>translate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[translate (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>translate</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trans_src</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trans_src (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>trans_src</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trans_dest</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trans_dest (dogetweets.csv)]</local-name>
+            <parent-name>[dogetweets.csv]</parent-name>
+            <remote-alias>trans_dest</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Close]' role='measure' type='quantitative' />
+      <column caption='Date1' datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column aggregation='CountD' caption='Tweet (Dogetweets.Csv) (copy)' datatype='string' name='[Tweet (Dogetweets.Csv) (copy)_1328280441470431233]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[tweet (dogetweets.csv)]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='DOGE-USD.csv' datatype='table' name='[__tableau_internal_object_id__].[DOGE-USD.csv_03DFA4A941B64AAA89DD8A2A866323E6]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Tweets.csv' datatype='table' name='[__tableau_internal_object_id__].[Tweets.csv_96A8472519404D01ADC4F80D02E312D6]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='dogetweets.csv' datatype='table' name='[__tableau_internal_object_id__].[dogetweets.csv_3B8D7267EB884557870F9533F0C3C9F1]' role='measure' type='quantitative' />
+      <column caption='Cashtags (Dogetweets.Csv)' datatype='string' name='[cashtags (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Cashtags' datatype='string' name='[cashtags]' role='dimension' type='nominal' />
+      <column caption='Conversation Id (Dogetweets.Csv)' datatype='integer' name='[conversation_id (dogetweets.csv)]' role='dimension' type='ordinal' />
+      <column caption='Conversation Id' datatype='integer' name='[conversation_id]' role='dimension' type='ordinal' />
+      <column caption='Created At (Dogetweets.Csv)' datatype='integer' name='[created_at (dogetweets.csv)]' role='measure' type='quantitative' />
+      <column caption='Created At' datatype='integer' name='[created_at]' role='measure' type='quantitative' />
+      <column caption='Date (Dogetweets.Csv)' datatype='date' name='[date (dogetweets.csv)]' role='dimension' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='quantitative' />
+      <column caption='Day (Dogetweets.Csv)' datatype='integer' name='[day (dogetweets.csv)]' role='dimension' type='quantitative' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column caption='Geo (Dogetweets.Csv)' datatype='string' name='[geo (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Geo' datatype='string' name='[geo]' role='dimension' type='nominal' />
+      <column caption='Hashtags (Dogetweets.Csv)' datatype='string' name='[hashtags (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Hashtags' datatype='string' name='[hashtags]' role='dimension' type='nominal' />
+      <column caption='Hour (Dogetweets.Csv)' datatype='integer' name='[hour (dogetweets.csv)]' role='measure' type='quantitative' />
+      <column caption='Hour' datatype='integer' name='[hour]' role='measure' type='quantitative' />
+      <column caption='Id (Dogetweets.Csv)' datatype='integer' name='[id (dogetweets.csv)]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Language (Dogetweets.Csv)' datatype='string' name='[language (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Language' datatype='string' name='[language]' role='dimension' type='nominal' />
+      <column caption='Link (Dogetweets.Csv)' datatype='string' name='[link (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Link' datatype='string' name='[link]' role='dimension' type='nominal' />
+      <column caption='Name (Dogetweets.Csv)' datatype='string' name='[name (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Near (Dogetweets.Csv)' datatype='string' name='[near (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Near' datatype='string' name='[near]' role='dimension' type='nominal' />
+      <column caption='Nlikes (Dogetweets.Csv)' datatype='integer' name='[nlikes (dogetweets.csv)]' role='measure' type='quantitative' />
+      <column caption='Nlikes' datatype='integer' name='[nlikes]' role='measure' type='quantitative' />
+      <column caption='Nreplies (Dogetweets.Csv)' datatype='integer' name='[nreplies (dogetweets.csv)]' role='measure' type='quantitative' />
+      <column caption='Nreplies' datatype='integer' name='[nreplies]' role='measure' type='quantitative' />
+      <column caption='Nretweets (Dogetweets.Csv)' datatype='integer' name='[nretweets (dogetweets.csv)]' role='measure' type='quantitative' />
+      <column caption='Nretweets' datatype='integer' name='[nretweets]' role='measure' type='quantitative' />
+      <column caption='Photos (Dogetweets.Csv)' datatype='string' name='[photos (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Photos' datatype='string' name='[photos]' role='dimension' type='nominal' />
+      <column caption='Place (Dogetweets.Csv)' datatype='string' name='[place (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Place' datatype='string' name='[place]' role='dimension' type='nominal' />
+      <column caption='Quote Url (Dogetweets.Csv)' datatype='string' name='[quote_url (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Quote Url' datatype='string' name='[quote_url]' role='dimension' type='nominal' />
+      <column caption='Reply To (Dogetweets.Csv)' datatype='string' name='[reply_to (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Reply To' datatype='string' name='[reply_to]' role='dimension' type='nominal' />
+      <column caption='Retweet (Dogetweets.Csv)' datatype='boolean' name='[retweet (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Retweet' datatype='boolean' name='[retweet]' role='dimension' type='nominal' />
+      <column caption='Retweet Date (Dogetweets.Csv)' datatype='string' name='[retweet_date (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Retweet Date' datatype='string' name='[retweet_date]' role='dimension' type='nominal' />
+      <column caption='Retweet Id (Dogetweets.Csv)' datatype='string' name='[retweet_id (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Retweet Id' datatype='string' name='[retweet_id]' role='dimension' type='nominal' />
+      <column caption='Search (Dogetweets.Csv)' datatype='string' name='[search (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Search' datatype='string' name='[search]' role='dimension' type='nominal' />
+      <column caption='Source (Dogetweets.Csv)' datatype='string' name='[source (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+      <column caption='Thumbnail (Dogetweets.Csv)' datatype='string' name='[thumbnail (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Thumbnail' datatype='string' name='[thumbnail]' role='dimension' type='nominal' />
+      <column caption='Timezone (Dogetweets.Csv)' datatype='integer' name='[timezone (dogetweets.csv)]' role='measure' type='quantitative' />
+      <column caption='Timezone' datatype='integer' name='[timezone]' role='measure' type='quantitative' />
+      <column caption='Trans Dest (Dogetweets.Csv)' datatype='string' name='[trans_dest (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Trans Dest' datatype='string' name='[trans_dest]' role='dimension' type='nominal' />
+      <column caption='Trans Src (Dogetweets.Csv)' datatype='string' name='[trans_src (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Trans Src' datatype='string' name='[trans_src]' role='dimension' type='nominal' />
+      <column caption='Translate (Dogetweets.Csv)' datatype='string' name='[translate (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Translate' datatype='string' name='[translate]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Tweet (Dogetweets.Csv)' datatype='string' default-role='measure' default-type='quantitative' name='[tweet (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Tweet' datatype='string' name='[tweet]' role='dimension' type='nominal' />
+      <column caption='Urls (Dogetweets.Csv)' datatype='string' name='[urls (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Urls' datatype='string' name='[urls]' role='dimension' type='nominal' />
+      <column caption='User Id (Dogetweets.Csv)' datatype='integer' name='[user_id (dogetweets.csv)]' role='dimension' type='ordinal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <column caption='User Id Str (Dogetweets.Csv)' datatype='integer' name='[user_id_str (dogetweets.csv)]' role='measure' type='quantitative' />
+      <column caption='User Id Str' datatype='integer' name='[user_id_str]' role='measure' type='quantitative' />
+      <column caption='User Rt (Dogetweets.Csv)' datatype='string' name='[user_rt (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='User Rt' datatype='string' name='[user_rt]' role='dimension' type='nominal' />
+      <column caption='User Rt Id (Dogetweets.Csv)' datatype='string' name='[user_rt_id (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='User Rt Id' datatype='string' name='[user_rt_id]' role='dimension' type='nominal' />
+      <column caption='Username (Dogetweets.Csv)' datatype='string' name='[username (dogetweets.csv)]' role='dimension' type='nominal' />
+      <column caption='Username' datatype='string' name='[username]' role='dimension' type='nominal' />
+      <column caption='Video (Dogetweets.Csv)' datatype='integer' name='[video (dogetweets.csv)]' role='measure' type='quantitative' />
+      <column caption='Video' datatype='integer' name='[video]' role='measure' type='quantitative' />
+      <column-instance column='[Tweet (Dogetweets.Csv) (copy)_1328280441470431233]' derivation='Attribute' name='[attr:Tweet (Dogetweets.Csv) (copy)_1328280441470431233:nk]' pivot='key' type='nominal' />
+      <column-instance column='[date]' derivation='Attribute' name='[attr:date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tweet (dogetweets.csv)]' derivation='Attribute' name='[attr:tweet (dogetweets.csv):nk]' pivot='key' type='nominal' />
+      <column-instance column='[date (dogetweets.csv)]' derivation='Count' name='[cnt:date (dogetweets.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date]' derivation='Count' name='[cnt:date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tweet (dogetweets.csv)]' derivation='Count' name='[cnt:tweet (dogetweets.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tweet (dogetweets.csv)]' derivation='CountD' name='[ctd:tweet (dogetweets.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Close]' derivation='None' name='[none:Close:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Tweet (Dogetweets.Csv) (copy)_1328280441470431233]' derivation='None' name='[none:Tweet (Dogetweets.Csv) (copy)_1328280441470431233:nk]' pivot='key' type='nominal' />
+      <column-instance column='[tweet (dogetweets.csv)]' derivation='None' name='[none:tweet (dogetweets.csv):nk]' pivot='key' type='nominal' />
+      <column-instance column='[date]' derivation='Count' name='[pcto:cnt:date:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Close]' derivation='Sum' name='[pcto:sum:Close:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Close]' derivation='Sum' name='[sum:Close:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[none:Close:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[pcto:sum:Close:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[sum:Close:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[cnt:tweet (dogetweets.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[cnt:date (dogetweets.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[cnt:date:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[attr:tweet (dogetweets.csv):nk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[ctd:tweet (dogetweets.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[none:tweet (dogetweets.csv):nk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[attr:date:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1cvgb7219ux5ls19xhr9006d5dxq].[pcto:cnt:date:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Tweet (Dogetweets.Csv) (copy)_1328280441470431233:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;@itsALLrisky Doge appears to be inflationary, but is not meaningfully so (fixed \# of coins per unit time), whereas BTC is arguably deflationary to a fault.  Transaction speed of Doge should ideally be a few orders of magnitude faster.&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;No highs, no lows, only Doge&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;@beeple 420M Doge&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Doge&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;@Dogecoinrich 🤣🤣&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dogecoin is the people’s crypto&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;@PPathole @dogecoin Just some used Antminer L3+ rigs bought off eBay. Not really economic, but it was a fun family project.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;🎶 Who let the Doge out 🎶&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;@Jbuttermost @Dogecoinrich 🤣🤣&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;One word: Doge&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;@draecomino 2022: Dogecoin is dumb&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dojo 4 Doge&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bought some Dogecoin for lil X, so he can be a toddler hodler&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;@business Tesla’s action is not directly reflective of my opinion. Having some Bitcoin, which is simply a less dumb form of liquidity than cash, is adventurous enough for an S&amp;amp;P500 company.&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Doge day afternoon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bitcoin is almost as bs as fiat money&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;@Grimezsz Dogecake&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Frodo was the underdoge, All thought he would fail, Himself most of all.  https://t.co/zGxJFDzzrM&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;@RationalEtienne An acceptable percentage. Doge is much more concentrated.&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;@ReflexFunds @nickidk4 @pcgamer Dojo/Doge&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bitcoin is my safe word&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BTC (Bitcoin) is an anagram of TBC(The Boring Company) What a coincidence!&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;@lexfridman Sometimes it’s about Doge&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Origin of Doge Day Afternoon: The ancient Romans sacrificed a Dogecoin at the beginning of the Doge Days to appease the rage of Sirius, believing that the star was the cause of the hot, sultry weather.&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;@gtera27 Doge is underestimated&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;If major Dogecoin holders sell most of their coins, it will get my full support. Too much concentration is the only real issue imo.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;@business To be clear, I am *not* an investor, I am an engineer. I don’t even own any publicly traded stock besides Tesla.   However, when fiat currency has negative real interest, only a fool wouldn’t look elsewhere.   Bitcoin is almost as bs as fiat money. The key word is “almost”.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Doge meme shield (legendary item)  https://t.co/CeomU9q84c&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;@WootiezTV Very much so &amp;amp; its leader shall be The Doge   https://t.co/VXmuW5c0y9&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;@Maisie_Williams 🎶 Toss a bitcoin to ur Witcher 🎶&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Why are you so dogematic, they ask&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;@dogecoin I just set up some little Doge mining rigs with my kids. It was fun.&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Doge spelled backwards is Egod&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Tweet (Dogetweets.Csv) (copy)_1328280441470431233:nk]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;@itsALLrisky Doge appears to be inflationary, but is not meaningfully so (fixed \# of coins per unit time), whereas BTC is arguably deflationary to a fault.  Transaction speed of Doge should ideally be a few orders of magnitude faster.&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;No highs, no lows, only Doge&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;@beeple 420M Doge&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Doge&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;@Dogecoinrich 🤣🤣&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dogecoin is the people’s crypto&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;@PPathole @dogecoin Just some used Antminer L3+ rigs bought off eBay. Not really economic, but it was a fun family project.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;🎶 Who let the Doge out 🎶&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;@Jbuttermost @Dogecoinrich 🤣🤣&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;One word: Doge&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;@draecomino 2022: Dogecoin is dumb&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dojo 4 Doge&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bought some Dogecoin for lil X, so he can be a toddler hodler&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;@business Tesla’s action is not directly reflective of my opinion. Having some Bitcoin, which is simply a less dumb form of liquidity than cash, is adventurous enough for an S&amp;amp;P500 company.&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Doge day afternoon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bitcoin is almost as bs as fiat money&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;@Grimezsz Dogecake&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Frodo was the underdoge, All thought he would fail, Himself most of all.  https://t.co/zGxJFDzzrM&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;@RationalEtienne An acceptable percentage. Doge is much more concentrated.&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;@ReflexFunds @nickidk4 @pcgamer Dojo/Doge&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bitcoin is my safe word&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BTC (Bitcoin) is an anagram of TBC(The Boring Company) What a coincidence!&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;@lexfridman Sometimes it’s about Doge&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Origin of Doge Day Afternoon: The ancient Romans sacrificed a Dogecoin at the beginning of the Doge Days to appease the rage of Sirius, believing that the star was the cause of the hot, sultry weather.&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;@gtera27 Doge is underestimated&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;If major Dogecoin holders sell most of their coins, it will get my full support. Too much concentration is the only real issue imo.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;@business To be clear, I am *not* an investor, I am an engineer. I don’t even own any publicly traded stock besides Tesla.   However, when fiat currency has negative real interest, only a fool wouldn’t look elsewhere.   Bitcoin is almost as bs as fiat money. The key word is “almost”.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Doge meme shield (legendary item)  https://t.co/CeomU9q84c&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;@WootiezTV Very much so &amp;amp; its leader shall be The Doge   https://t.co/VXmuW5c0y9&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;@Maisie_Williams 🎶 Toss a bitcoin to ur Witcher 🎶&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Why are you so dogematic, they ask&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;@dogecoin I just set up some little Doge mining rigs with my kids. It was fun.&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Doge spelled backwards is Egod&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='DOGE-USD.csv' id='DOGE-USD.csv_03DFA4A941B64AAA89DD8A2A866323E6'>
+            <properties context=''>
+              <relation connection='textscan.0dopzxm08e7k6g17n9nxw0h6idr8' name='DOGE-USD.csv' table='[DOGE-USD#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='real' name='Open' ordinal='1' />
+                  <column datatype='real' name='High' ordinal='2' />
+                  <column datatype='real' name='Low' ordinal='3' />
+                  <column datatype='real' name='Close' ordinal='4' />
+                  <column datatype='real' name='Adj Close' ordinal='5' />
+                  <column datatype='integer' name='Volume' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Tweets.csv' id='Tweets.csv_96A8472519404D01ADC4F80D02E312D6'>
+            <properties context=''>
+              <relation connection='textscan.06l32bl15bjufz14m1p211gwv7vs' name='Tweets.csv' table='[Tweets#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Table Names-1' ordinal='0' />
+                  <column datatype='string' name='Table Names' ordinal='1' />
+                  <column datatype='integer' name='F1' ordinal='2' />
+                  <column datatype='integer' name='id' ordinal='3' />
+                  <column datatype='integer' name='conversation_id' ordinal='4' />
+                  <column datatype='integer' name='created_at' ordinal='5' />
+                  <column datatype='date' name='date' ordinal='6' />
+                  <column datatype='integer' name='timezone' ordinal='7' />
+                  <column datatype='string' name='place' ordinal='8' />
+                  <column datatype='string' name='tweet' ordinal='9' />
+                  <column datatype='string' name='language' ordinal='10' />
+                  <column datatype='string' name='hashtags' ordinal='11' />
+                  <column datatype='string' name='cashtags' ordinal='12' />
+                  <column datatype='integer' name='user_id' ordinal='13' />
+                  <column datatype='integer' name='user_id_str' ordinal='14' />
+                  <column datatype='string' name='username' ordinal='15' />
+                  <column datatype='string' name='name' ordinal='16' />
+                  <column datatype='integer' name='day' ordinal='17' />
+                  <column datatype='integer' name='hour' ordinal='18' />
+                  <column datatype='string' name='link' ordinal='19' />
+                  <column datatype='string' name='urls' ordinal='20' />
+                  <column datatype='string' name='photos' ordinal='21' />
+                  <column datatype='integer' name='video' ordinal='22' />
+                  <column datatype='string' name='thumbnail' ordinal='23' />
+                  <column datatype='boolean' name='retweet' ordinal='24' />
+                  <column datatype='integer' name='nlikes' ordinal='25' />
+                  <column datatype='integer' name='nreplies' ordinal='26' />
+                  <column datatype='integer' name='nretweets' ordinal='27' />
+                  <column datatype='string' name='quote_url' ordinal='28' />
+                  <column datatype='string' name='search' ordinal='29' />
+                  <column datatype='string' name='near' ordinal='30' />
+                  <column datatype='string' name='geo' ordinal='31' />
+                  <column datatype='string' name='source' ordinal='32' />
+                  <column datatype='string' name='user_rt_id' ordinal='33' />
+                  <column datatype='string' name='user_rt' ordinal='34' />
+                  <column datatype='string' name='retweet_id' ordinal='35' />
+                  <column datatype='string' name='reply_to' ordinal='36' />
+                  <column datatype='string' name='retweet_date' ordinal='37' />
+                  <column datatype='string' name='translate' ordinal='38' />
+                  <column datatype='string' name='trans_src' ordinal='39' />
+                  <column datatype='string' name='trans_dest' ordinal='40' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='dogetweets.csv' id='dogetweets.csv_3B8D7267EB884557870F9533F0C3C9F1'>
+            <properties context=''>
+              <relation connection='textscan.0dopzxm08e7k6g17n9nxw0h6idr8' name='dogetweets.csv' table='[dogetweets#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Table Names-1' ordinal='0' />
+                  <column datatype='string' name='Table Names' ordinal='1' />
+                  <column datatype='string' name='Table Names-2' ordinal='2' />
+                  <column datatype='integer' name='F1' ordinal='3' />
+                  <column datatype='integer' name='id' ordinal='4' />
+                  <column datatype='integer' name='conversation_id' ordinal='5' />
+                  <column datatype='integer' name='created_at' ordinal='6' />
+                  <column datatype='date' name='date' ordinal='7' />
+                  <column datatype='integer' name='timezone' ordinal='8' />
+                  <column datatype='string' name='place' ordinal='9' />
+                  <column datatype='string' name='tweet' ordinal='10' />
+                  <column datatype='string' name='language' ordinal='11' />
+                  <column datatype='string' name='hashtags' ordinal='12' />
+                  <column datatype='string' name='cashtags' ordinal='13' />
+                  <column datatype='integer' name='user_id' ordinal='14' />
+                  <column datatype='integer' name='user_id_str' ordinal='15' />
+                  <column datatype='string' name='username' ordinal='16' />
+                  <column datatype='string' name='name' ordinal='17' />
+                  <column datatype='integer' name='day' ordinal='18' />
+                  <column datatype='integer' name='hour' ordinal='19' />
+                  <column datatype='string' name='link' ordinal='20' />
+                  <column datatype='string' name='urls' ordinal='21' />
+                  <column datatype='string' name='photos' ordinal='22' />
+                  <column datatype='integer' name='video' ordinal='23' />
+                  <column datatype='string' name='thumbnail' ordinal='24' />
+                  <column datatype='boolean' name='retweet' ordinal='25' />
+                  <column datatype='integer' name='nlikes' ordinal='26' />
+                  <column datatype='integer' name='nreplies' ordinal='27' />
+                  <column datatype='integer' name='nretweets' ordinal='28' />
+                  <column datatype='string' name='quote_url' ordinal='29' />
+                  <column datatype='string' name='search' ordinal='30' />
+                  <column datatype='string' name='near' ordinal='31' />
+                  <column datatype='string' name='geo' ordinal='32' />
+                  <column datatype='string' name='source' ordinal='33' />
+                  <column datatype='string' name='user_rt_id' ordinal='34' />
+                  <column datatype='string' name='user_rt' ordinal='35' />
+                  <column datatype='string' name='retweet_id' ordinal='36' />
+                  <column datatype='string' name='reply_to' ordinal='37' />
+                  <column datatype='string' name='retweet_date' ordinal='38' />
+                  <column datatype='string' name='translate' ordinal='39' />
+                  <column datatype='string' name='trans_src' ordinal='40' />
+                  <column datatype='string' name='trans_dest' ordinal='41' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[date]' />
+              <expression op='[Date]' />
+            </expression>
+            <first-end-point object-id='Tweets.csv_96A8472519404D01ADC4F80D02E312D6' />
+            <second-end-point object-id='DOGE-USD.csv_03DFA4A941B64AAA89DD8A2A866323E6' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[date (dogetweets.csv)]' />
+            </expression>
+            <first-end-point object-id='DOGE-USD.csv_03DFA4A941B64AAA89DD8A2A866323E6' />
+            <second-end-point object-id='dogetweets.csv_3B8D7267EB884557870F9533F0C3C9F1' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Dogecoin Prices and Elon Musk Dogecoin Tweets</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output' name='federated.1cvgb7219ux5ls19xhr9006d5dxq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cvgb7219ux5ls19xhr9006d5dxq'>
+            <column datatype='real' name='[Close]' role='measure' type='quantitative' />
+            <column caption='Date1' datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[date (dogetweets.csv)]' derivation='Count' name='[cnt:date (dogetweets.csv):qk]' pivot='key' type='quantitative' />
+            <column caption='Date (Dogetweets.Csv)' datatype='date' name='[date (dogetweets.csv)]' role='dimension' type='quantitative' />
+            <column-instance column='[Close]' derivation='None' name='[none:Close:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tweet]' derivation='None' name='[none:tweet:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+            <column caption='Tweet' datatype='string' name='[tweet]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[cnt:date (dogetweets.csv):qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <filter class='categorical' column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[none:tweet:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;“Lord” Edge&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Adamklotz_ @Erdayastronaut @SpaceX Yes&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Adamklotz_ @SpaceX Space&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@ajtourville @Erdayastronaut @SpaceX Yes, but engines have a min throttle point where there is flameout risk, so landing on 3 engines means high thrust/weight (further away from hover point), which is also risky&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@archillect Avocado Toast&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@arctechinc Should be very soon. Many subtle differences between US &amp;amp; Canada roads, so harder than it seems.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@ashleevance For sure wise for elderly or immunocompromised to take the vaccine. Some debate about the second jab though. Quite a few negative reactions to that.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@astro_g_dogg @SpaceX Yup&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@AstroJordy Yes&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@AstroJordy 🤣🤣&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@beeple 420M Doge&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@billhuang688 @JohnnaCrider1 @timmerenginerd @jack Maybe *I* just love irony haha&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@BizzzzzyD You have a point (sigh)&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@BocaChicaGal @NASASpaceflight Good chance of flying this week!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@brendan2908 @NASASpaceflight Yes&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@business Tesla’s action is not directly reflective of my opinion. Having some Bitcoin, which is simply a less dumb form of liquidity than cash, is adventurous enough for an S&amp;amp;P500 company.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@business To be clear, I am *not* an investor, I am an engineer. I don’t even own any publicly traded stock besides Tesla.   However, when fiat currency has negative real interest, only a fool wouldn’t look elsewhere.   Bitcoin is almost as bs as fiat money. The key word is “almost”.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@CallowayTech Sounds about right&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@CapybaraSurfer @MattWallace888 Does seem a bit high&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@chicago_glenn @archillect 🤣🤣&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@chicago_glenn @TimSweeneyEpic @TrevorMahlmann Starhopper is an old timer who has seen a lot of things!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@ChrisG_NSF Special permission received from Stonecutters Guild!  https://t.co/SW5RBm1sRB&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@commander_cruz Might actually happen&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@DJSnM @Erdayastronaut @CharlesNOtrumps @rweb11742 Absolutely. Production/testing of rocket engines is over 90\% of the problem. This is true in general. For cars, production is over 99\% of the problem. That 1\% inspiration is very important, but it’s less than 1\% of the pain.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@dogecoin I just set up some little Doge mining rigs with my kids. It was fun.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Dogecoinrich 🤣🤣&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@draecomino 2022: Dogecoin is dumb&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@DumDin7 @Grimezsz Haven’t heard that name in years …&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Erdayastronaut @CharlesNOtrumps @rweb11742 Our first Merlin engine design was really bad tbh. Nothing worked well &amp;amp; some parts didn’t work at all. 18 years later &amp;amp; thousands of upgrades make it a great GG cycle engine.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Erdayastronaut @michaelhodapp_ 1. Orbital launch tower that can stack 2. Enough Raptors for orbit booster 3. Improve ship &amp;amp; booster mass&quot;' />
+              <groupfilter from='&quot;@Erdayastronaut @rweb11742 Damn, that’s not easy! I spent quite a bit of time looking at Russian/Ukrainian engines. They’re good.&quot;' function='range' level='[none:tweet:nk]' to='&quot;@Erdayastronaut @rweb11742 The most amazing thing about rocket engines is that they *sometimes* don’t blow up! The amount of power going through them boggles the mind.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Erdayastronaut @SpaceX It was foolish of us not to start 3 engines &amp;amp; immediately shut down 1, as 2 are needed to land&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Erdayastronaut High seas &amp;amp; wind&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Erdayastronaut Yes, Booster 1 is a production pathfinder, figuring out how to build &amp;amp; transport 70 meter tall stage. Booster 2 will fly.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@FFairing @thejackbeyer @NASASpaceflight Quarks &amp;amp; leptons&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@flcnhvy @anonyx10 Indeed! Tweets definitely do not represent real-world time allocation.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@flcnhvy @AstroJordy Not that easy. This is two decades of intense work. Have to look at old notes, emails, texts.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@flcnhvy @LUGG4S1 @pcgamer Maybe making some notable changes. Will wait until figurative &amp;amp; literal dust settles.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@flcnhvy Pretty much. The main value of college used to be hanging out, having pseudo intellectual conversations &amp;amp; partying with people your own age. Now, even that’s gone.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@flcnhvy Yeah, with cooling channels integrated into the chamber walls&quot;' />
+              <groupfilter from='&quot;@freewalletorg Any crypto wallet that won’t give you your private keys should be avoided at all costs&quot;' function='range' level='[none:tweet:nk]' to='&quot;@freewalletorg Your app sucks&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@gaertner_anne @Neuro_Skeptic @DresdenTea @judith_herbers Haha&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@garyblack00 Update probably in Q2. Cybertruck will be built at Giga Texas, so focus right now is on getting that beast built.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@geoffkeighley @UnrealEngine It’s getting real&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@GiveDirectly Just sent some&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@GreenIsClutch @JohnnaCrider1 @timmerenginerd @jack They’re on their way! Hopefully, more Teslaquila next month.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Grimezsz Dogecake&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@gtera27 Doge is underestimated&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@hajek_miloslav Great nails &amp;amp; lipstick&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@HuobiGlobal The most entertaining outcome is the most likely&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@ICannot_Enough @Erdayastronaut @rweb11742 Pretty close. Definitely feel 💯 if I take DayQuil. Frankly, this was one of the mildest cold/flu experiences I’ve ever had.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@itsALLrisky Doge appears to be inflationary, but is not meaningfully so (fixed \# of coins per unit time), whereas BTC is arguably deflationary to a fault.  Transaction speed of Doge should ideally be a few orders of magnitude faster.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@itsALLrisky It’s the most fun crypto!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@itsALLrisky Yes!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@jack Well said.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Jbuttermost @Dogecoinrich 🤣🤣&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@joerogan @Spotify Great interview!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@JohnnaCrider1 @timmerenginerd @jack Fate 🖤 Irony&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@josh_bickett @ajtourville @Erdayastronaut @SpaceX Yeah. By default, engine with least lever arm would shut down if all 3 are good.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@josh_bickett @ICannot_Enough @Erdayastronaut @rweb11742 Yeah, PCR Ct was unequivocal at &amp;lt;20. Doesn’t matter what method you use at that low a cycle threshold.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@JoshManMode He definitely has issues, but the sentencing seems a bit high&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@JoshRoomsburg @SnoopDogg @genesimmons Its simplicity is its genius&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Kristennetten @royalsociety More like he gave it his blessing. It was sort of a groundswell of those who believed in the scientific method in London.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Kristennetten That’s Damian&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Kristennetten Yeah&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Kristennetten 😉&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@LarryKellogg @arctechinc The Tesla FSD computer started shipping in volume in Q2 2019. 2020 cars should all have FSD computers, whether or not  ordered as an option.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@lexfridman Haha&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@lexfridman Sometimes it’s about Doge&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@LUGG4S1 @pcgamer About 2 secs after starting engines, martyte covering concrete below shattered, sending blades of hardened rock into engine bay. One rock blade severed avionics cable, causing bad shutdown of Raptor.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@LUGG4S1 @pcgamer Avionics cables moving to steel pipe shields &amp;amp; adding water-cooled steel pipes to test pad&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@MadOverlord We were too dumb&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Maisie_Williams 🎶 Toss a bitcoin to ur Witcher 🎶&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@MarcusHouseGame Success on landing probability is ~60\% this time&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@michael_saylor Are such large transactions even possible?&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@MichaelGalanin @kevinmgill Wow&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@michaelhodapp_ Back to work tonight!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@michaelmina_lab Creating synthetic mRNA for cures/vaccines is the future of medicine imo. Turns it (mostly) into a software &amp;amp; modeling problem.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@michaelmina_lab Great thread&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@MightyTesla @Kristennetten @lauren_kalo @SawyerMerritt @jasondebolt @CodingMark @28delayslater @BabyTesla3 @4thRowPopcorn @IloveElonandTe1 Nice&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@mikko @Darudevil It’s true!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@MIT_CSAIL Machine learning is so amaze!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@NASA Congratulations!!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@nextspaceflight @NASASpaceflight An area much larger than Boca Chica&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Nivetha_7_42 @lexfridman So cute 💕&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@OwenSparks_ @flcnhvy @anonyx10 Haha thanks :)&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@OwenSparks_ Sure&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@padgeuk Absolutely. We will release FSD subscription early next year.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@parstalberg @josh_bickett @ICannot_Enough @Erdayastronaut @rweb11742 Yes, but from a visiting American. Ah, the irony is just too much!!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@pcgamer Great game&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@pcgamer We should just count the atoms at this point&quot;' />
+              <groupfilter from='&quot;@peterrhague It’s designed to make life multiplanetary, otherwise extreme overkill for mere Earth sector activity!   Starship fleet mass to orbit per year will be more than 1000 times all current Earth rockets combined, including Falcon. Necessary, for a city on Mars.&quot;' function='range' level='[none:tweet:nk]' to='&quot;@PeterSchiff That said, BTC &amp;amp; ETH do seem high lol&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@pflodin @DoctorKarl Absolutely&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@PPathole @dogecoin Just some used Antminer L3+ rigs bought off eBay. Not really economic, but it was a fun family project.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@PPathole @Erdayastronaut @rweb11742 Yeah, looks like marginal cost of launch will be less than $1M for more than 100 tons to orbit, so it’s mostly about fixed costs divided by launches per year&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@PPathole @michaelmina_lab Yes&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@PPathole @TimSweeneyEpic This was way past leg loads. They got squashed hard.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@PPathole Should we?&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Pslavi Cool&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@RationalEtienne An acceptable percentage. Doge is much more concentrated.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@RationalEtienne 🤣🤣&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@realfuckingnews @business Somehow, a hash text file using ancient crypto can be exchanged for real goods &amp;amp; services!? Amazing.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@redditSpacePorn 🤣🤣&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@redlineshifter Just a scratch&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@ReflexFunds @nickidk4 @pcgamer Dojo/Doge&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@SamTalksTesla I’m ok, thanks for asking. No symptoms for past few days, apart from fatigue. Unless something changes, would have to say that it simply felt like a mild cold.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@SciGuySpace SpaceX did 2X rest of world payload to orbit last year, probably 3X to 4X this year&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@SomePaleGamer 🤣🤣&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@speculawyer @Erdayastronaut @rweb11742 Exactly&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@teslacn Congratulations Tesla China for amazing execution last year. Now on to the next for even more!!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@teslaownersSV Yup&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@Tesmanian_com Yes&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@TheBabylonBee Why don’t we have these already!?&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@thejackbeyer @NASASpaceflight Green flame in this context means engine is burning internal components made of copper. This is usually followed by a RUD (Rapid Unscheduled Disassembly).&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@TheOnion Have you read @TheBabylonBee? It’s great!!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@thesheetztweetz Ahem …&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@TimSweeneyEpic Thrust was low despite being commanded high for reasons unknown at present, hence hard touchdown. We’ve never seen this before.  Next time, min two engines all the way to the ground &amp;amp; restart engine 3 if engine 1 or 2 have issues.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@TimSweeneyEpic Was super fun tbh haha&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@tobyliiiiiiiiii We will need launch tower for that. Hook height for the lift is ~140 m &amp;amp; both booster &amp;amp; ship need to be stabilized at stage separation joint.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@totalspace360 Looks familiar haha. Nonetheless, the right move. Congrats to Rocket Lab.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@trylolli @Maisie_Williams 👻 💵   https://t.co/UWerAhxUev&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@TSLAgang @SpinelessModer1 Yes&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@UniverCurious Extremely misleading image, as doesn’t reflect true time cost to people or rain &amp;amp; pain&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@wapodavenport True&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@westcoastbill Indeed&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@westcoastbill The $1400 is mostly good imo (UBI lite), as the people get to choose how the money is spent, but the rest is mostly net bad for the people as a whole (though it is obviously characterized otherwise).&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@WhatsupFranks @michaelmina_lab CureVac, Moderna &amp;amp; a few others. Tesla makes the machine CureVac uses to go from known gene sequence to trillions of lipid-coated mRNA strands.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@WholeMarsBlog Beta V8.3 has literally ~1000 improvements. Will take time to QA internally before release probably in two or three weeks.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@WholeMarsBlog Most people have no idea, even though there are so many FSD progress videos posted. Munro understood right away.   There will be a gap before the next release, but then it will be a step change better.  Tesla is solving a major real-world AI problem.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@WholeMarsBlog Note, buying FSD will still be a better long-term deal than subscription&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@WholeMarsBlog Q2 for sure&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@WholeMarsBlog Tesla China team rocks!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@WootiezTV Very much so &amp;amp; its leader shall be The Doge   https://t.co/VXmuW5c0y9&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@xDreamCoding @frank_thelen Nice branding&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;@YourLordThanos @Waymo 🔥🔥&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;♥️&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;♥️ i love all u crazy ppl out there ♥️&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Always wondered where exactly your gaming character keeps all the stuff  https://t.co/nNk2MeFGjf&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Aspirationally acerbic alliteration  -&amp;gt; Bullshit baffles brains&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Availability varies by region due to regulatory approval delays and/or Tesla internal development &amp;amp; testing.   Note: word “Beta” is used to reduce complacency in usage &amp;amp; set expectations appropriately. All software is first tested internally by Tesla simulation &amp;amp; QA drive teams.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Back to work I go …&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Bitcoin is almost as bs as fiat money&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Bitcoin is my safe word&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Both do mining &amp;amp; use blocks &amp;amp; chains&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Bought some Dogecoin for lil X, so he can be a toddler hodler&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;BTC (Bitcoin) is an anagram of TBC(The Boring Company) What a coincidence!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Come for the comments,  stay for the memes💄&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Creating the city of Starbase, Texas&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Cryptocurrency explained  https://t.co/kUXaXx8a1R&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Ð is for Ðogecoin! Instructional video.  https://t.co/UEEocOfcTb&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Deus ex machine learning  https://t.co/5ZSYalVczx&quot;' />
+              <groupfilter from='&quot;Doge&quot;' function='range' level='[none:tweet:nk]' to='&quot;Dogecoin is the people’s crypto&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Dojo 4 Doge&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Due to high levels of demand for FSD Beta, adding “Download Beta” button to Service section of car display in ~10 days&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;First Super Heavy Booster  https://t.co/0K5QPsEbbt&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Frodo was the underdoge, All thought he would fail, Himself most of all.  https://t.co/zGxJFDzzrM&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;From thence to Mars, And hence the Stars.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;FSD Beta has now been expanded to ~2000 owners &amp;amp; we’ve also revoked beta where drivers did not pay sufficient attention to the road. No accidents to date.  Next significant release will be in April. Going with pure vision — not even using radar. This is the way to real-world AI.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Green eggs &amp;amp; SPAC&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Happy New Year of the Ox!  https://t.co/9WFKMYu2oj&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Heard a rumor some crypto coin was pegging the dollar 🤣🤣&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Hodl the rainforests!!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Horses are even self-driving!  https://t.co/qPJrCFGs8J&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;https://t.co/3rWE9uHSTS&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;https://t.co/EbOjGshvrq&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;https://t.co/vviUzWhodT&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Hypernominalization&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;I am become meme, Destroyer of shorts&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;I just want to start a flame in your heart&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;I’m selling this song about NFTs as an NFT  https://t.co/B4EZLlesPx&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;If major Dogecoin holders sell most of their coins, it will get my full support. Too much concentration is the only real issue imo.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;If you want the Tesla Full Self-Driving Beta downloaded to your car, let us know. Doubling beta program size now with 8.2 &amp;amp; probably 10X size with 8.3. Still be careful, but it’s getting mature.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Just agree to do Clubhouse with @kanyewest&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Just for a day&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Just kidding, who needs a safe word anyway!?&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Launch in 5 minutes&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Lessons learned&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Low-key Loki&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Much wow!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;New drug coming out called Regretamine. Pop one &amp;amp; all regrets are gone.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Next time, we try pull *up* method  https://t.co/J1M7WHLRDR&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;No highs, no lows, only Doge&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;No need to be a gigachad to own&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Nullius in Verba @royalsociety&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Of Earth and Mars&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Of spaceflight&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;One word: Doge&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Or did they say pegged to the dollar? Something like that …&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Origin of Doge Day Afternoon: The ancient Romans sacrificed a Dogecoin at the beginning of the Doge Days to appease the rage of Sirius, believing that the star was the cause of the hot, sultry weather.&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Sandstorm is a masterpiece&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Scammers &amp;amp; crypto should get a room&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;So … it’s finally come to this …  https://t.co/Gf0Rg2QOaF&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;The future currency of Earth&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;The great thing about restaurants is that you get to hang out with strangers! - SJM&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;The most entertaining outcome is the most likely&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;The people have spoken …&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;The same propellant is used either for abort or for orbital maneuvering, as one use obviates the other&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;The Second Last Kingdom  https://t.co/Je4EI88HmV&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;The simulation really struggled to make this look real haha  https://t.co/t8zvFTRUHU&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;This is true power haha  https://t.co/Fc9uhQSd7O&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;This was a tough one&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Time to tell the story of Tesla &amp;amp; SpaceX&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;ur welcome  https://t.co/e2KF57KLxb&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Why are you so dogematic, they ask&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;Woketopia. Battle for the Moral High Ground in this new game!&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;YOLT   https://t.co/cnOf9yjpF1&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;🎶 This Magic Moment 🎶&quot;' />
+              <groupfilter function='member' level='[none:tweet:nk]' member='&quot;🎶 Who let the Doge out 🎶&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[tdy:Date:qk]' included-values='in-range'>
+            <min>#2020-10-01 00:00:00#</min>
+            <max>#2021-10-07 00:00:00#</max>
+          </filter>
+          <filter class='categorical' column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[yr:Date:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Date:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2020' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2021' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1cvgb7219ux5ls19xhr9006d5dxq].[yr:Date:ok]</column>
+            <column>[federated.1cvgb7219ux5ls19xhr9006d5dxq].[cnt:date (dogetweets.csv):qk]</column>
+            <column>[federated.1cvgb7219ux5ls19xhr9006d5dxq].[tdy:Date:qk]</column>
+            <column>[federated.1cvgb7219ux5ls19xhr9006d5dxq].[none:tweet:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[none:Close:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cvgb7219ux5ls19xhr9006d5dxq].[none:Close:qk]</rows>
+        <cols>[federated.1cvgb7219ux5ls19xhr9006d5dxq].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{208BD914-1C07-43CD-BF98-F341672F1DCA}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output' name='federated.1cvgb7219ux5ls19xhr9006d5dxq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cvgb7219ux5ls19xhr9006d5dxq'>
+            <column datatype='real' name='[Close]' role='measure' type='quantitative' />
+            <column caption='Date1' datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Count' name='[cnt:date:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='quantitative' />
+            <column-instance column='[Close]' derivation='Sum' name='[sum:Close:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[tmn:Date:qk]' included-values='in-range'>
+            <min>#2015-01-01 00:00:00#</min>
+            <max>#2021-10-01 00:00:00#</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[tyr:date:qk]' included-values='in-range'>
+            <min>#2015-01-01 00:00:00#</min>
+            <max>#2021-10-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.1cvgb7219ux5ls19xhr9006d5dxq].[tmn:Date:qk]</column>
+            <column>[federated.1cvgb7219ux5ls19xhr9006d5dxq].[tyr:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[cnt:date:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='render-fold-reversed' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[sum:Close:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[cnt:date:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='147' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1cvgb7219ux5ls19xhr9006d5dxq].[sum:Close:qk] + [federated.1cvgb7219ux5ls19xhr9006d5dxq].[cnt:date:qk])</rows>
+        <cols>[federated.1cvgb7219ux5ls19xhr9006d5dxq].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{17ECE56D-A51E-4CB2-8465-BBC77F172C9E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='221'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='82'>
+            <card type='columns' />
+          </strip>
+          <strip size='108'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{336912ED-65EF-4730-B1EA-80708DBCAB42}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1cvgb7219ux5ls19xhr9006d5dxq].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{233734A5-D60A-4B84-9CE3-44800B02E01C}' />
+    </window>
+  </windows>
+</workbook>
