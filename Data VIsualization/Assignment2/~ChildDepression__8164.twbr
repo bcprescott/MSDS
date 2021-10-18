@@ -1,0 +1,869 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Output' inline='true' name='federated.1q4q2h8133zop31dtgoxn17w0rid' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Output' name='textscan.0uth3hc15thxeb1dgwygy06alpxw'>
+            <connection class='textscan' directory='C:/Users/bprescott/Documents/MSDS/Data VIsualization/Assignment2' filename='Output.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0uth3hc15thxeb1dgwygy06alpxw' name='Output.csv' table='[Output#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='SC_AGE_YEARS' ordinal='0' />
+            <column datatype='integer' name='K2Q32A' ordinal='1' />
+            <column datatype='integer' name='ACE6' ordinal='2' />
+            <column datatype='integer' name='ACE10' ordinal='3' />
+            <column datatype='integer' name='BULLIED_R' ordinal='4' />
+            <column datatype='integer' name='K2Q33C' ordinal='5' />
+            <column datatype='integer' name='K2Q32C' ordinal='6' />
+            <column datatype='integer' name='A1_MENTHEALTH' ordinal='7' />
+            <column datatype='integer' name='A1_MARITAL' ordinal='8' />
+            <column datatype='integer' name='A1_ACTIVE' ordinal='9' />
+            <column datatype='integer' name='HOURSLEEP' ordinal='10' />
+            <column datatype='integer' name='SCREENTIME' ordinal='11' />
+            <column datatype='integer' name='ACE1' ordinal='12' />
+            <column datatype='integer' name='MAKEFRIEND' ordinal='13' />
+            <column datatype='integer' name='FAMILY_R' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0uth3hc15thxeb1dgwygy06alpxw' name='Output.csv' table='[Output#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='SC_AGE_YEARS' ordinal='0' />
+            <column datatype='integer' name='K2Q32A' ordinal='1' />
+            <column datatype='integer' name='ACE6' ordinal='2' />
+            <column datatype='integer' name='ACE10' ordinal='3' />
+            <column datatype='integer' name='BULLIED_R' ordinal='4' />
+            <column datatype='integer' name='K2Q33C' ordinal='5' />
+            <column datatype='integer' name='K2Q32C' ordinal='6' />
+            <column datatype='integer' name='A1_MENTHEALTH' ordinal='7' />
+            <column datatype='integer' name='A1_MARITAL' ordinal='8' />
+            <column datatype='integer' name='A1_ACTIVE' ordinal='9' />
+            <column datatype='integer' name='HOURSLEEP' ordinal='10' />
+            <column datatype='integer' name='SCREENTIME' ordinal='11' />
+            <column datatype='integer' name='ACE1' ordinal='12' />
+            <column datatype='integer' name='MAKEFRIEND' ordinal='13' />
+            <column datatype='integer' name='FAMILY_R' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SC_AGE_YEARS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SC_AGE_YEARS]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>SC_AGE_YEARS</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>K2Q32A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[K2Q32A]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>K2Q32A</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACE6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ACE6]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>ACE6</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACE10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ACE10]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>ACE10</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BULLIED_R</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BULLIED_R]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>BULLIED_R</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>K2Q33C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[K2Q33C]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>K2Q33C</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>K2Q32C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[K2Q32C]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>K2Q32C</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A1_MENTHEALTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[A1_MENTHEALTH]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>A1_MENTHEALTH</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A1_MARITAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[A1_MARITAL]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>A1_MARITAL</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A1_ACTIVE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[A1_ACTIVE]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>A1_ACTIVE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOURSLEEP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HOURSLEEP]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>HOURSLEEP</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCREENTIME</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SCREENTIME]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>SCREENTIME</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACE1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ACE1]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>ACE1</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAKEFRIEND</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MAKEFRIEND]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>MAKEFRIEND</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FAMILY_R</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FAMILY_R]</local-name>
+            <parent-name>[Output.csv]</parent-name>
+            <remote-alias>FAMILY_R</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[A1_MARITAL]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[A1_MENTHEALTH]' role='measure' type='quantitative' />
+      <column caption='ACE10 (copy)' datatype='integer' name='[ACE10 (copy)_1240178775898349570]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='[ACE10]' />
+      </column>
+      <column datatype='integer' name='[ACE10]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[ACE1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[BULLIED_R]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Depression (copy 2)' datatype='integer' name='[Depression (copy 2)_574490456199946240]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[K2Q32A]' />
+      </column>
+      <column aggregation='Sum' caption='Depression (copy)' datatype='integer' name='[Depression (copy)_1240178775891230721]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[K2Q32A]' />
+      </column>
+      <column datatype='integer' name='[FAMILY_R]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[HOURSLEEP]' role='measure' type='quantitative' />
+      <column caption='Depression' datatype='integer' name='[K2Q32A]' role='measure' type='quantitative' />
+      <column caption='DepressionSeverity' datatype='integer' name='[K2Q32C]' role='measure' type='quantitative' />
+      <column caption='AnxietySeverity' datatype='integer' name='[K2Q33C]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[MAKEFRIEND]' role='measure' type='quantitative' />
+      <column caption='Screentime' datatype='integer' name='[SCREENTIME]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='childage' datatype='integer' name='[SC_AGE_YEARS]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Output.csv' datatype='table' name='[__tableau_internal_object_id__].[Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C]' role='measure' type='quantitative' />
+      <column caption='childage (copy)' datatype='integer' name='[childage (copy)_1240178775889551360]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[SC_AGE_YEARS]' />
+      </column>
+      <column-instance column='[A1_MARITAL]' derivation='Avg' name='[avg:A1_MARITAL:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[A1_MENTHEALTH]' derivation='Avg' name='[avg:A1_MENTHEALTH:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ACE1]' derivation='Avg' name='[avg:ACE1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[BULLIED_R]' derivation='Avg' name='[avg:BULLIED_R:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FAMILY_R]' derivation='Avg' name='[avg:FAMILY_R:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HOURSLEEP]' derivation='Avg' name='[avg:HOURSLEEP:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[K2Q32A]' derivation='Avg' name='[avg:K2Q32A:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[K2Q32C]' derivation='Avg' name='[avg:K2Q32C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[K2Q33C]' derivation='Avg' name='[avg:K2Q33C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MAKEFRIEND]' derivation='Avg' name='[avg:MAKEFRIEND:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SCREENTIME]' derivation='Avg' name='[avg:SCREENTIME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ACE10]' derivation='Count' name='[cnt:ACE10:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[K2Q32A]' derivation='Count' name='[cnt:K2Q32A:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SCREENTIME]' derivation='Count' name='[cnt:SCREENTIME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SCREENTIME]' derivation='Max' name='[max:SCREENTIME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FAMILY_R]' derivation='Median' name='[med:FAMILY_R:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SCREENTIME]' derivation='Median' name='[med:SCREENTIME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ACE10]' derivation='None' name='[none:ACE10:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[K2Q32A]' derivation='None' name='[none:K2Q32A:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SCREENTIME]' derivation='None' name='[none:SCREENTIME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SC_AGE_YEARS]' derivation='None' name='[none:SC_AGE_YEARS:ok]' pivot='key' type='ordinal' />
+      <column-instance aggregation-param='25' column='[SCREENTIME]' derivation='Percentile' name='[prc25:SCREENTIME:qk]' pivot='key' type='quantitative' />
+      <column-instance aggregation-param='90' column='[SCREENTIME]' derivation='Percentile' name='[prc90:SCREENTIME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[A1_MARITAL]' derivation='Sum' name='[sum:A1_MARITAL:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[A1_MENTHEALTH]' derivation='Sum' name='[sum:A1_MENTHEALTH:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ACE10]' derivation='Sum' name='[sum:ACE10:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ACE1]' derivation='Sum' name='[sum:ACE1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[BULLIED_R]' derivation='Sum' name='[sum:BULLIED_R:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FAMILY_R]' derivation='Sum' name='[sum:FAMILY_R:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HOURSLEEP]' derivation='Sum' name='[sum:HOURSLEEP:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[K2Q32A]' derivation='Sum' name='[sum:K2Q32A:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[K2Q32C]' derivation='Sum' name='[sum:K2Q32C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[K2Q33C]' derivation='Sum' name='[sum:K2Q33C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MAKEFRIEND]' derivation='Sum' name='[sum:MAKEFRIEND:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SCREENTIME]' derivation='Sum' name='[sum:SCREENTIME:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:A1_MARITAL:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:A1_MENTHEALTH:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:ACE1:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:BULLIED_R:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:K2Q33C:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:SCREENTIME:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[cnt:ACE10:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[cnt:SCREENTIME:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[max:SCREENTIME:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[med:SCREENTIME:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[none:ACE10:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[none:SCREENTIME:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[prc25:SCREENTIME:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[prc90:SCREENTIME:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:A1_MARITAL:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:A1_MENTHEALTH:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:ACE1:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:ACE10:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:BULLIED_R:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:K2Q32C:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:K2Q33C:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:SCREENTIME:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:FAMILY_R:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:K2Q32C:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:MAKEFRIEND:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[med:FAMILY_R:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:FAMILY_R:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:K2Q32A:qk]:1&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:MAKEFRIEND:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:HOURSLEEP:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:K2Q32A:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[cnt:K2Q32A:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[none:K2Q32A:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:HOURSLEEP:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:K2Q32A:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:SC_AGE_YEARS:ok]&#10;[:Measure Names]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>0</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>10</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>9</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>3</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>13</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>6</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>16</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>2</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>12</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>1</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>11</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>7</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>17</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>8</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>5</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>15</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>4</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>14</bucket>
+            </map-pri>
+          </encoding>
+          <encoding attr='color' field='[none:SC_AGE_YEARS:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>3</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Output.csv' id='Output.csv_7E76D08E4900401C837BBD2BFA9AAB8C'>
+            <properties context=''>
+              <relation connection='textscan.0uth3hc15thxeb1dgwygy06alpxw' name='Output.csv' table='[Output#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='SC_AGE_YEARS' ordinal='0' />
+                  <column datatype='integer' name='K2Q32A' ordinal='1' />
+                  <column datatype='integer' name='ACE6' ordinal='2' />
+                  <column datatype='integer' name='ACE10' ordinal='3' />
+                  <column datatype='integer' name='BULLIED_R' ordinal='4' />
+                  <column datatype='integer' name='K2Q33C' ordinal='5' />
+                  <column datatype='integer' name='K2Q32C' ordinal='6' />
+                  <column datatype='integer' name='A1_MENTHEALTH' ordinal='7' />
+                  <column datatype='integer' name='A1_MARITAL' ordinal='8' />
+                  <column datatype='integer' name='A1_ACTIVE' ordinal='9' />
+                  <column datatype='integer' name='HOURSLEEP' ordinal='10' />
+                  <column datatype='integer' name='SCREENTIME' ordinal='11' />
+                  <column datatype='integer' name='ACE1' ordinal='12' />
+                  <column datatype='integer' name='MAKEFRIEND' ordinal='13' />
+                  <column datatype='integer' name='FAMILY_R' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output' name='federated.1q4q2h8133zop31dtgoxn17w0rid' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q4q2h8133zop31dtgoxn17w0rid'>
+            <column caption='Depression' datatype='integer' name='[K2Q32A]' role='measure' type='quantitative' />
+            <column caption='Screentime' datatype='integer' name='[SCREENTIME]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='childage' datatype='integer' name='[SC_AGE_YEARS]' role='dimension' type='ordinal' />
+            <column-instance column='[SCREENTIME]' derivation='Avg' name='[avg:SCREENTIME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[K2Q32A]' derivation='None' name='[none:K2Q32A:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SC_AGE_YEARS]' derivation='None' name='[none:SC_AGE_YEARS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[K2Q32A]' derivation='Sum' name='[sum:K2Q32A:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1q4q2h8133zop31dtgoxn17w0rid].[none:K2Q32A:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>1</max>
+          </filter>
+          <slices>
+            <column>[federated.1q4q2h8133zop31dtgoxn17w0rid].[none:K2Q32A:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:K2Q32A:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.1q4q2h8133zop31dtgoxn17w0rid].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:SCREENTIME:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1q4q2h8133zop31dtgoxn17w0rid].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:K2Q32A:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1q4q2h8133zop31dtgoxn17w0rid].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='size' value='1.1424309015274048' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:SCREENTIME:qk] + [federated.1q4q2h8133zop31dtgoxn17w0rid].[sum:K2Q32A:qk])</rows>
+        <cols>[federated.1q4q2h8133zop31dtgoxn17w0rid].[none:SC_AGE_YEARS:qk]</cols>
+      </table>
+      <simple-id uuid='{3B18E22C-5A56-4B53-A815-0762C6FB1CEA}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>Trends of depression for children who were reported to be treated unfairly because of their race. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output' name='federated.1q4q2h8133zop31dtgoxn17w0rid' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q4q2h8133zop31dtgoxn17w0rid'>
+            <column datatype='integer' name='[HOURSLEEP]' role='measure' type='quantitative' />
+            <column caption='Depression' datatype='integer' name='[K2Q32A]' role='measure' type='quantitative' />
+            <column caption='Screentime' datatype='integer' name='[SCREENTIME]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='childage' datatype='integer' name='[SC_AGE_YEARS]' role='dimension' type='ordinal' />
+            <column-instance column='[HOURSLEEP]' derivation='Avg' name='[avg:HOURSLEEP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SCREENTIME]' derivation='Avg' name='[avg:SCREENTIME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[K2Q32A]' derivation='Count' name='[cnt:K2Q32A:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[K2Q32A]' derivation='None' name='[none:K2Q32A:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SC_AGE_YEARS]' derivation='None' name='[none:SC_AGE_YEARS:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1q4q2h8133zop31dtgoxn17w0rid].[none:K2Q32A:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>1</max>
+          </filter>
+          <slices>
+            <column>[federated.1q4q2h8133zop31dtgoxn17w0rid].[none:K2Q32A:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='24' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1q4q2h8133zop31dtgoxn17w0rid].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='25' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:SCREENTIME:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1q4q2h8133zop31dtgoxn17w0rid].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='26' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:HOURSLEEP:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1q4q2h8133zop31dtgoxn17w0rid].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='27' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1q4q2h8133zop31dtgoxn17w0rid].[cnt:K2Q32A:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1q4q2h8133zop31dtgoxn17w0rid].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+                <format attr='aspect' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:SCREENTIME:qk] + ([federated.1q4q2h8133zop31dtgoxn17w0rid].[avg:HOURSLEEP:qk] + [federated.1q4q2h8133zop31dtgoxn17w0rid].[cnt:K2Q32A:qk]))</rows>
+        <cols>[federated.1q4q2h8133zop31dtgoxn17w0rid].[none:SC_AGE_YEARS:qk]</cols>
+      </table>
+      <simple-id uuid='{D86DBB5C-4BE1-4661-8033-CB02E89B29ED}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{79913D1A-E832-4CCE-964A-AC1F7A06F15E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='109'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='0'>
+            <card pane-specification-id='25' param='[federated.1q4q2h8133zop31dtgoxn17w0rid].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{24FAA278-28B7-4C8E-AE11-CAF8EC2387FB}' />
+    </window>
+  </windows>
+</workbook>
