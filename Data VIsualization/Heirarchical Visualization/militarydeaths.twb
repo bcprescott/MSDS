@@ -1,0 +1,882 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='militarydeaths' inline='true' name='federated.1q8hj0h0e7b3yv1comj3q08ui6g4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='militarydeaths' name='textscan.0fsrx6f1hwh5vz18tcfj70ekxvuy'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:\Users\bprescott\Documents\MSDS\Data VIsualization\Heirarchical Visualization\militarydeaths.csv' dataRefreshTime='' directory='C:/Users/bprescott/Documents/MSDS/Data VIsualization/Heirarchical Visualization' filename='C:/Users/BPRESC~1/AppData/Local/Temp/TableauTemp/1cxuj6b1micbvv1cd1y2l0voqtqx/militarydeaths.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0fsrx6f1hwh5vz18tcfj70ekxvuy' name='militarydeaths.csv' table='[C:\Users\bprescott\Documents\MSDS\Data VIsualization\Heirarchical Visualization\militarydeaths#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:N33:no:A1:N33:2' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Calendar Year' ordinal='0' />
+            <column datatype='integer' name='Active Duty' ordinal='1' />
+            <column datatype='integer' name='Full-Time (est) Guard+Reserve' ordinal='2' />
+            <column datatype='integer' name='Selected Reserve FTE' ordinal='3' />
+            <column datatype='integer' name='Total Military FTE' ordinal='4' />
+            <column datatype='integer' name='Total Deaths' ordinal='5' />
+            <column datatype='real' name='Accident ' ordinal='6' />
+            <column datatype='integer' name='Hostile Action' ordinal='7' />
+            <column datatype='integer' name='Homicide ' ordinal='8' />
+            <column datatype='integer' name='Illness ' ordinal='9' />
+            <column datatype='integer' name='Pending ' ordinal='10' />
+            <column datatype='integer' name='Self-Inflicted' ordinal='11' />
+            <column datatype='integer' name='Terrorist Attack' ordinal='12' />
+            <column datatype='integer' name='Undetermined ' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0fsrx6f1hwh5vz18tcfj70ekxvuy' name='militarydeaths.csv' table='[C:\Users\bprescott\Documents\MSDS\Data VIsualization\Heirarchical Visualization\militarydeaths#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:N33:no:A1:N33:2' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Calendar Year' ordinal='0' />
+            <column datatype='integer' name='Active Duty' ordinal='1' />
+            <column datatype='integer' name='Full-Time (est) Guard+Reserve' ordinal='2' />
+            <column datatype='integer' name='Selected Reserve FTE' ordinal='3' />
+            <column datatype='integer' name='Total Military FTE' ordinal='4' />
+            <column datatype='integer' name='Total Deaths' ordinal='5' />
+            <column datatype='real' name='Accident ' ordinal='6' />
+            <column datatype='integer' name='Hostile Action' ordinal='7' />
+            <column datatype='integer' name='Homicide ' ordinal='8' />
+            <column datatype='integer' name='Illness ' ordinal='9' />
+            <column datatype='integer' name='Pending ' ordinal='10' />
+            <column datatype='integer' name='Self-Inflicted' ordinal='11' />
+            <column datatype='integer' name='Terrorist Attack' ordinal='12' />
+            <column datatype='integer' name='Undetermined ' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N33:no:A1:N33:2&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calendar Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Calendar Year]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Calendar Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active Duty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Active Duty]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Active Duty</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full-Time (est) Guard+Reserve</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Full-Time (est) Guard+Reserve]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Full-Time (est) Guard+Reserve</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Selected Reserve FTE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Selected Reserve FTE]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Selected Reserve FTE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Military FTE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Military FTE]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Total Military FTE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Deaths]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Total Deaths</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accident </remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Accident ]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Accident </remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hostile Action</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hostile Action]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Hostile Action</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Homicide </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Homicide ]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Homicide </remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Illness </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Illness ]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Illness </remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pending </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pending ]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Pending </remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Self-Inflicted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Self-Inflicted]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Self-Inflicted</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Terrorist Attack</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Terrorist Attack]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Terrorist Attack</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Undetermined </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Undetermined ]</local-name>
+            <parent-name>[militarydeaths.csv]</parent-name>
+            <remote-alias>Undetermined </remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[militarydeaths.csv_844D370C649343158B5F44415E535D81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Accident ]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' datatype-customized='true' name='[Calendar Year (copy)_471470616957284353]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, STR([Calendar Year]) )) ' />
+      </column>
+      <column datatype='integer' name='[Calendar Year]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Homicide ]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Hostile Action]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Illness ]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Self-Inflicted]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Terrorist Attack]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='militarydeaths.csv' datatype='table' name='[__tableau_internal_object_id__].[militarydeaths.csv_844D370C649343158B5F44415E535D81]' role='measure' type='quantitative' />
+      <column-instance column='[Accident ]' derivation='Sum' name='[sum:Accident :qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Homicide ]' derivation='Sum' name='[sum:Homicide :qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Hostile Action]' derivation='Sum' name='[sum:Hostile Action:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Illness ]' derivation='Sum' name='[sum:Illness :qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Self-Inflicted]' derivation='Sum' name='[sum:Self-Inflicted:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Terrorist Attack]' derivation='Sum' name='[sum:Terrorist Attack:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Deaths]' derivation='Sum' name='[sum:Total Deaths:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau-20' type='palette'>
+            <map to='#32779b'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Accident :qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Accident:qk]&quot;</bucket>
+            </map>
+            <map to='#61a956'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Self-Inflicted:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Illness:qk]&quot;</bucket>
+            </map>
+            <map to='#89c8cc'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Illness :qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Total Deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#d04344'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Hostile Action:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Terrorist Attack:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Homicide:qk]&quot;</bucket>
+            </map>
+            <map to='#f69e41'>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Homicide :qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='militarydeaths.csv' id='militarydeaths.csv_844D370C649343158B5F44415E535D81'>
+            <properties context=''>
+              <relation connection='textscan.0fsrx6f1hwh5vz18tcfj70ekxvuy' name='militarydeaths.csv' table='[C:\Users\bprescott\Documents\MSDS\Data VIsualization\Heirarchical Visualization\militarydeaths#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:N33:no:A1:N33:2' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Calendar Year' ordinal='0' />
+                  <column datatype='integer' name='Active Duty' ordinal='1' />
+                  <column datatype='integer' name='Full-Time (est) Guard+Reserve' ordinal='2' />
+                  <column datatype='integer' name='Selected Reserve FTE' ordinal='3' />
+                  <column datatype='integer' name='Total Military FTE' ordinal='4' />
+                  <column datatype='integer' name='Total Deaths' ordinal='5' />
+                  <column datatype='real' name='Accident ' ordinal='6' />
+                  <column datatype='integer' name='Hostile Action' ordinal='7' />
+                  <column datatype='integer' name='Homicide ' ordinal='8' />
+                  <column datatype='integer' name='Illness ' ordinal='9' />
+                  <column datatype='integer' name='Pending ' ordinal='10' />
+                  <column datatype='integer' name='Self-Inflicted' ordinal='11' />
+                  <column datatype='integer' name='Terrorist Attack' ordinal='12' />
+                  <column datatype='integer' name='Undetermined ' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='24'>U.S. Military Deaths by Cause</run>
+            <run>Æ&#10;</run>
+            <run fontsize='18'>Years 1980 - 2010</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontsize='15'>Source:</run>
+            <run fontsize='15'> Defense Manpower Data Center</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='militarydeaths' name='federated.1q8hj0h0e7b3yv1comj3q08ui6g4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q8hj0h0e7b3yv1comj3q08ui6g4'>
+            <column datatype='real' name='[Accident ]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calendar Year (copy)_471470616957284353]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, STR([Calendar Year]) )) ' />
+            </column>
+            <column datatype='integer' name='[Calendar Year]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Homicide ]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Hostile Action]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Illness ]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Self-Inflicted]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Terrorist Attack]' role='measure' type='quantitative' />
+            <column-instance column='[Accident ]' derivation='Sum' name='[sum:Accident :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Homicide ]' derivation='Sum' name='[sum:Homicide :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hostile Action]' derivation='Sum' name='[sum:Hostile Action:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Illness ]' derivation='Sum' name='[sum:Illness :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Self-Inflicted]' derivation='Sum' name='[sum:Self-Inflicted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Terrorist Attack]' derivation='Sum' name='[sum:Terrorist Attack:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calendar Year (copy)_471470616957284353]' derivation='Year-Trunc' name='[tyr:Calendar Year (copy)_471470616957284353:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Terrorist Attack:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Hostile Action:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Self-Inflicted:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Accident :qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Illness :qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Homicide :qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Terrorist Attack:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Hostile Action:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Accident :qk]&quot;</bucket>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Homicide :qk]&quot;</bucket>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Self-Inflicted:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Illness :qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]' field-type='quantitative' major-origin='0.0' major-spacing='100.0' max='2500.0' min='0.0' minor-origin='0.0' minor-spacing='50.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]' scope='cols' value='Death Count' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='tick-color' scope='cols' value='#000000' />
+            <format attr='tick-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='normal' />
+            <format attr='text-orientation' value='0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' scope='rows' value='Tableau Regular' />
+            <format attr='font-family' scope='cols' value='Tableau Regular' />
+            <format attr='color' scope='rows' value='#898989' />
+            <format attr='color' scope='cols' value='#898989' />
+            <format attr='font-size' scope='rows' value='15' />
+            <format attr='font-weight' scope='rows' value='normal' />
+            <format attr='font-size' scope='cols' value='15' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]' palette='sunrise_sunset_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='0' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='stroke-size' id='annotation_1' value='2' />
+            <format attr='rounding' id='annotation_1' value='small' />
+            <format attr='stroke-size' id='annotation_0' value='2' />
+            <format attr='rounding' id='annotation_0' value='small' />
+            <format attr='rounding' id='annotation_4' value='small' />
+            <format attr='stroke-size' id='annotation_4' value='2' />
+            <format attr='fill-color' id='annotation_1' value='#f5f5f5e6' />
+            <format attr='fill-color' id='annotation_4' value='#f5f5f5e6' />
+            <format attr='fill-color' id='annotation_0' value='#f5f5f5e6' />
+            <format attr='border-color' id='annotation_1' value='#898989' />
+            <format attr='border-style' id='annotation_1' value='solid' />
+            <format attr='border-color' id='annotation_4' value='#898989' />
+            <format attr='border-style' id='annotation_4' value='solid' />
+            <format attr='border-color' id='annotation_0' value='#898989' />
+            <format attr='border-style' id='annotation_0' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[:Measure Names]' />
+              <lod column='[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[tyr:Calendar Year (copy)_471470616957284353:ok]</rows>
+        <cols>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='0.7' pullback='11.1803' text-width='292'>
+            <formatted-text>
+              <run bold='true' fontalignment='0' fontcolor='#000000' fontsize='11'>Event:</run>
+              <run bold='true' fontalignment='0' fontsize='11'>Æ </run>
+              <run fontalignment='0' fontsize='11'>Beirut Marine barracks bombing</run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run bold='true' fontalignment='0' fontcolor='#000000' fontsize='11'>Death Toll:</run>
+              <run bold='true' fontalignment='0' fontcolor='#787878' fontsize='11'>Æ </run>
+              <run bold='true' fontalignment='0' fontcolor='#e15759' fontsize='11'><![CDATA[<[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Terrorist Attack:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[tyr:Calendar Year (copy)_471470616957284353:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[tyr:Calendar Year (copy)_471470616957284353:ok]</field>
+                      <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[:Measure Names]</field>
+                      <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#1983-01-01 00:00:00#</value>
+                    <value>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Terrorist Attack:qk]&quot;</value>
+                    <value>263.0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-81' y='135' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='250'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>Event: </run>
+              <run fontsize='11'>September 11 attacks</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>Death Toll:</run>
+              <run bold='true' fontcolor='#787878' fontsize='11'>Æ </run>
+              <run bold='true' fontcolor='#e15759' fontsize='11'><![CDATA[<[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Terrorist Attack:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[tyr:Calendar Year (copy)_471470616957284353:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[tyr:Calendar Year (copy)_471470616957284353:ok]</field>
+                      <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[:Measure Names]</field>
+                      <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2001-01-01 00:00:00#</value>
+                    <value>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Terrorist Attack:qk]&quot;</value>
+                    <value>46.0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='313' y='-101' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='0.935065' pullback='12' text-width='238'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>Event: </run>
+              <run fontsize='11'>Beginning of Iraq war</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>Death Toll:</run>
+              <run fontcolor='#787878' fontsize='11'>Æ </run>
+              <run bold='true' fontcolor='#e15759' fontsize='11'><![CDATA[<[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Hostile Action:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[tyr:Calendar Year (copy)_471470616957284353:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[tyr:Calendar Year (copy)_471470616957284353:ok]</field>
+                      <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[:Measure Names]</field>
+                      <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2003-01-01 00:00:00#</value>
+                    <value>&quot;[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Hostile Action:qk]&quot;</value>
+                    <value>312.0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='307' y='-44' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{17A8E8DB-5947-47CB-A29A-4C99A1454B13}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='205'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='measures' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='37'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='8' param='[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[none:Calendar Year:qk]</field>
+            <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[sum:Accident:qk]</field>
+            <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[yr:Calendar Year (copy)_471470616957284353:ok]</field>
+            <field>[federated.1q8hj0h0e7b3yv1comj3q08ui6g4].[yr:Calendar Year (date):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FD5D9751-6138-48EE-9FF6-6EDB6EDFD330}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
