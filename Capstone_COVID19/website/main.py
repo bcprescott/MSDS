@@ -2,7 +2,10 @@ from flask import Flask, render_template, request
 from azure.storage.blob import BlobClient
 import urllib.request
 import json
-
+import urllib.request
+import json
+import os
+import ssl
 
 
 app = Flask(__name__)
@@ -15,13 +18,13 @@ def upload_file():
 def upload():
    if request.method == 'POST':
       f = request.files['file']
-      storage_account_key = "LSRjcStHbWkkpPEVhtWdLfqj/LnhSQ52JEfTIRuXaHPDRESWTFUiurvqW2YZl6McnXoCQp1HVt28YDg3XC7k3A=="
-      storage_url = "https://mlstor.blob.core.windows.net/"
-      blob_client = BlobClient(storage_url, container_name="images", blob_name=f.filename, credential=storage_account_key)
+      storage_account_key = "7MSa4yl/Re/t9IfDWi7m8fxKfAQdd/wPGUte+TAlKYvTbtQJgFkDG14JstsZh8diDNkHl/SHK+sEThrlTHobaQ=="
+      storage_url = "https://capimages.blob.core.windows.net/"
+      blob_client = BlobClient(storage_url, container_name="test", blob_name=f.filename, credential=storage_account_key)
       with open(f.filename, "rb") as data:
           blob_client.upload_blob(data)
-      url = 'https://covid-inference.northcentralus.inference.ml.azure.com/score'
-      api_key = '2ja9yDjBX8de4h8ynWpTsfI7YkuLL8BF' # Replace this with the API key for the web service
+      url = 'https://covidinference.northcentralus.inference.ml.azure.com/score'
+      api_key = 'pblmcCaQvwWbgWIgp92fkr4y3aGc0qzH' # Replace this with the API key for the web service
       headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
       data = {"image":f.filename}
       body = str.encode(json.dumps(data))
